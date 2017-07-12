@@ -1,0 +1,99 @@
+  /*----------------------*/
+ /*-- Montserrat Fonts --*/
+/*----------------------*/
+@font-face {
+   font-family: MontserratBold;
+   src: url(../fonts/Montserrat-Bold.otf);
+}
+@font-face {
+   font-family: MontserratRegular;
+   src: url(../fonts/Montserrat-Regular.otf);
+}
+@font-face {
+   font-family: MontserratLight;
+   src: url(../fonts/Montserrat-Light.otf);
+}
+.fontbold{
+    font-family: MontserratBold, sans-serif;
+}
+.fontlight{
+    font-family: MontserratLight, sans-serif;
+}
+body{
+    font-family: MontserratRegular, sans-serif;
+    background: #fff;
+}
+  /*----------------*/
+ /*-- Navigation --*/
+/*----------------*/
+nav{
+    height: 80px !important;
+    line-height: 80px !important;
+    background: rgba(0, 0, 0, 0.7) !important;
+}
+nav img.responsive-img{
+    margin-top: 17px;
+}
+nav .brand-logo{
+    height: 80px;
+}
+nav ul a{
+    color: #fff;
+    transition: color .6s !important;
+    -webkit-transition: color .6s !important;
+    font-size: 12px !important;
+    padding: 0 10px 0 10px !important;
+}
+nav ul.right li:first-child a{
+    padding: 0 10px 0 0 !important;
+}
+nav ul.right li:last-child a{
+    padding: 0 0 0 10px !important;
+}
+nav ul a:hover, nav ul a.active{
+    background: none !important;
+    color: #fcda00;
+}
+nav .button-collapse {
+    float: right !important;
+    margin: 0 !important;
+}
+nav i.material-icons{
+    font-size: 30px !important;
+}
+.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav{box-shadow : none !important;}
+#sidenav-overlay{
+    z-index: 99 !important;
+}
+nav .side-nav{
+    width: 200px !important;
+    z-index: 999 !important;
+}
+nav .side-nav li:hover, nav .side-nav li.active{
+    background: #000;
+}
+nav .side-nav li.active a{
+    color: #fcda00;
+}
+
+
+
+
+  /*----------------------------------*/
+ /*-- Responsive Mobile and Tablet --*/
+/*----------------------------------*/
+@media only screen and (max-width: 992px){
+    nav .brand-logo {
+        left: 70px !important;
+    }
+    nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+        height: 80px !important;
+        line-height: 80px !important;
+    }
+    nav img.responsive-img{
+        margin-top: 25px;
+        width: 10rem;
+    }
+}
+@media only screen and (max-width: 600px){
+}
