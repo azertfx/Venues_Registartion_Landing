@@ -188,10 +188,11 @@ section.homeservice article .col p{
  /*-- Home Venues --*/
 /*-----------------*/
 section.homevenues{
-    background: url('../images/home-venues-bg.jpg') top center;
+    background: url('../images/home-venues-bg.jpg') center center;
     background-size: cover;
     color: #fff;
     text-align: center;
+    padding: 40px 0 20px;
 }
 section.homevenues article .col h1{
     font-size: 28px;
@@ -202,7 +203,7 @@ section.homevenues article .col h1 span, section.homevenues article .col p span{
 }
 section.homevenues article .col p{
     font-size: 16px;
-    margin: 0 0 30px;
+    margin: 0 0 35px;
 }
 
 
@@ -249,6 +250,13 @@ section.homevenues article .col p{
     /*-- Home Service --*/
     section.homeservice article .col {
         height: 13rem;
+    }
+    /*-- Home Venues --*/
+    section.homevenues article .col h1 {
+        font-size: 20px;
+    }
+    section.homevenues article .col p {
+        font-size: 14px;
     }
 }
 @media only screen and (max-width: 770px){
