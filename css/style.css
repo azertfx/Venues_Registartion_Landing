@@ -39,8 +39,8 @@ nav .brand-logo{
 }
 nav ul a{
     color: #fff;
-    transition: color .6s !important;
-    -webkit-transition: color .6s !important;
+    transition: color .5s !important;
+    -webkit-transition: color .5s !important;
     font-size: 12px !important;
     padding: 0 10px 0 10px !important;
 }
@@ -75,14 +75,93 @@ nav .side-nav li:hover, nav .side-nav li.active{
 nav .side-nav li.active a{
     color: #fcda00;
 }
-
-
+  /*-----------------*/
+ /*-- Home Header --*/
+/*-----------------*/
+section.homeheader{
+    background: url('../images/home-header-bg.jpg') top center;
+    background-size: cover;
+    color: #fff;
+    margin-top: -65px;
+    padding: 120px 0 20px;
+    position: relative;
+    overflow: hidden;
+}
+section.homeheader .mobile-picture{
+    position: absolute;
+    width: 26%;
+}
+section.homeheader article h1{
+    font-size: 40px;
+    margin: 18px 0 15px;
+    line-height: 36.4px;
+}
+section.homeheader article h1 span{
+    color: #fcda00;
+}
+section.homeheader article p{
+    font-size: 21px;
+    line-height: 25.4px;
+}
+section.homeheader article p.cntnt{
+    margin: 0 0 23px;
+}
+section.homeheader article .valign-wrapper p{
+    font-size: 14px;
+    line-height: 15.4px;
+    margin: 0;
+}
+section.homeheader article .valign-wrapper span.nmbr{
+    font-size: 32px;
+    color: #fcda00;
+    border: 1px solid;
+    height: 40px;
+    width: 40px;
+    letter-spacing: 30px;
+    line-height: 37px;
+    margin: 6px 15px 6px 0;
+    padding-left: 9px;
+}
+section.homeheader article .valign-wrapper span.frstnmbr{
+    margin: 0 15px 6px 0;
+    padding-left: 12px;
+}
+section.homeheader article .valign-wrapper p a{
+    font-size: 21px;
+    color: #2d2d2c;
+    background: #fcda00;
+    padding: 13px;
+    display: block;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+}
+section.homeheader article .valign-wrapper p a img{
+    margin-left: 13px;
+}
+section.homeheader article .valign-wrapper p a:hover img.bl-arrow{
+    display: none;
+}
+section.homeheader article .valign-wrapper p a img.yw-arrow{
+    display: none;
+}
+section.homeheader article .valign-wrapper p a:hover img.yw-arrow{
+    display: block;
+}
+section.homeheader article .valign-wrapper p a:hover{
+    border: 1px solid #fcda00;
+    color: #fcda00;
+    background: none;
+}
+section.homeheader article p.fontlight span.fontbold{
+    color: #fcda00;
+}
 
 
   /*----------------------------------*/
  /*-- Responsive Mobile and Tablet --*/
 /*----------------------------------*/
 @media only screen and (max-width: 992px){
+     /*-- Navigation --*/
     nav .brand-logo {
         left: 70px !important;
     }
@@ -94,6 +173,35 @@ nav .side-nav li.active a{
         margin-top: 25px;
         width: 10rem;
     }
+     /*-- Home Header --*/
+    section.homeheader .mobile-picture {
+        width: 32%;
+    }
+    section.homeheader article h1 {
+        font-size: 28px;
+        line-height: 30px;
+    }
+    section.homeheader article p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    section.homeheader article .valign-wrapper p a {
+        font-size: 13px;
+    }
+    section.homeheader article .valign-wrapper p {
+        font-size: 12px;
+    }
 }
 @media only screen and (max-width: 600px){
+    section.homeheader{
+        padding: 120px 0 315px;
+    }
+    section.homeheader .mobile-picture {
+        max-width: 85%;
+        bottom: -260px;
+        width: 20rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
 }
