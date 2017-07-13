@@ -29,7 +29,7 @@ body{
 nav{
     height: 80px !important;
     line-height: 80px !important;
-    background: rgba(0, 0, 0, 0.7) !important;
+    background: rgba(0, 0, 0, 0.6) !important;
 }
 nav img.responsive-img{
     margin-top: 17px;
@@ -233,6 +233,46 @@ section.homesignupbar article a:hover{
     color: #fcda00;
     background: #000;
 }
+/*------------------*/
+/*-- Home footer --*/
+/*----------------*/
+section.homefooter{
+    background: url('../images/home-footer-bg.jpg') bottom center;
+    background-size: cover;
+    text-align: center;
+    color: #191918;
+    padding: 110px 0;
+}
+section.homefooter article.row{
+    margin: 0 auto;
+}
+section.homefooter article .col{
+    background: rgba(252, 218, 0, 0.6);
+    padding: 25px;
+}
+section.homefooter article h1{
+    font-size: 38px;
+    line-height: 37px;
+    margin: 0 0 20px;
+}
+section.homefooter article p{
+    font-size: 22px;
+    line-height: 25px;
+    margin: 0;
+}
+section.homefooter article a{
+    background: #191918;
+    padding: 8px 6px;
+    margin: 20px auto 0;
+    display: block;
+    border: 2px solid #191918;
+    width: 38px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+}
+section.homefooter article a:hover{
+    background: rgba(252, 218, 0, 0.4);
+}
 
 
   /*----------------------------------*/
@@ -242,6 +282,16 @@ section.homesignupbar article a:hover{
     /*-- Home Service --*/
     section.homeservice article .col {
         height: 15rem;
+    }
+    /*-- Home footer --*/
+    section.homefooter article h1 {
+        font-size: 30px;
+        line-height: 29px;
+        margin: 0 0 12px;
+    }
+    section.homefooter article p {
+        font-size: 18px;
+        line-height: 20px;
     }
 }
 @media only screen and (max-width: 992px){
@@ -286,6 +336,23 @@ section.homesignupbar article a:hover{
     section.homevenues article .col p {
         font-size: 14px;
     }
+    /*-- Home Signup Bar --*/
+    section.homesignupbar article h1 {
+        font-size: 25px;
+    }
+    section.homesignupbar article a {
+        font-size: 12px;
+        padding: 12px 15px;
+    }
+    /*-- Home footer --*/
+    section.homefooter article h1 {
+        font-size: 28px;
+        line-height: 27px;
+    }
+    section.homefooter article p {
+        font-size: 16px;
+        line-height: 18px;
+    }
 }
 @media only screen and (max-width: 770px){
     /*-- Home Service --*/
@@ -309,6 +376,15 @@ section.homesignupbar article a:hover{
     /*-- Home Service --*/
     section.homeservice article .col {
         height: auto;
+        margin-bottom: 20px;
+    }
+    /*-- Home Signup Bar --*/
+    section.homesignupbar article.row {
+        display: block;
+        text-align: center;
+    }
+    section.homesignupbar article h1 {
+        text-align: center;
         margin-bottom: 20px;
     }
 }
