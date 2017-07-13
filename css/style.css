@@ -155,13 +155,68 @@ section.homeheader article .valign-wrapper p a:hover{
 section.homeheader article p.fontlight span.fontbold{
     color: #fcda00;
 }
+  /*------------------*/
+ /*-- Home Service --*/
+/*------------------*/
+section.homeservice{
+    margin-top: 30px;
+}
+section.homeservice article.row{
+    margin: 0 auto;
+}
+section.homeservice article .col{
+    text-align: center;
+    height: 13.5rem;
+}
+section.homeservice article .col img{
+    background: #fcda00;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+section.homeservice article .col h1{
+    font-size: 16px;
+    color: #2d2d2c;
+    margin: 18px 0 8px;
+}
+section.homeservice article .col p{
+    font-size: 12px;
+    color: #2d2d2c;
+    margin: 0;
+}
+  /*-----------------*/
+ /*-- Home Venues --*/
+/*-----------------*/
+section.homevenues{
+    background: url('../images/home-venues-bg.jpg') top center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+section.homevenues article .col h1{
+    font-size: 28px;
+    margin: 0 0 16px;
+}
+section.homevenues article .col h1 span, section.homevenues article .col p span{
+    color: #fcda00;
+}
+section.homevenues article .col p{
+    font-size: 16px;
+    margin: 0 0 30px;
+}
 
 
   /*----------------------------------*/
  /*-- Responsive Mobile and Tablet --*/
 /*----------------------------------*/
+@media only screen and (max-width: 1150px){
+    /*-- Home Service --*/
+    section.homeservice article .col {
+        height: 15rem;
+    }
+}
 @media only screen and (max-width: 992px){
-     /*-- Navigation --*/
+    /*-- Navigation --*/
     nav .brand-logo {
         left: 70px !important;
     }
@@ -173,7 +228,7 @@ section.homeheader article p.fontlight span.fontbold{
         margin-top: 25px;
         width: 10rem;
     }
-     /*-- Home Header --*/
+    /*-- Home Header --*/
     section.homeheader .mobile-picture {
         width: 32%;
     }
@@ -191,8 +246,19 @@ section.homeheader article p.fontlight span.fontbold{
     section.homeheader article .valign-wrapper p {
         font-size: 12px;
     }
+    /*-- Home Service --*/
+    section.homeservice article .col {
+        height: 13rem;
+    }
+}
+@media only screen and (max-width: 770px){
+    /*-- Home Service --*/
+    section.homeservice article .col {
+        height: 14.5rem;
+    }
 }
 @media only screen and (max-width: 600px){
+    /*-- Home Header --*/
     section.homeheader{
         padding: 120px 0 315px;
     }
@@ -203,5 +269,10 @@ section.homeheader article p.fontlight span.fontbold{
         left: 0;
         right: 0;
         margin: auto;
+    }
+    /*-- Home Service --*/
+    section.homeservice article .col {
+        height: auto;
+        margin-bottom: 20px;
     }
 }
