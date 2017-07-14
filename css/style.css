@@ -233,9 +233,9 @@ section.homesignupbar article a:hover{
     color: #fcda00;
     background: #000;
 }
-/*------------------*/
-/*-- Home footer --*/
-/*----------------*/
+  /*-----------------*/
+ /*-- Home footer --*/
+/*-----------------*/
 section.homefooter{
     background: url('../images/home-footer-bg.jpg') bottom center;
     background-size: cover;
@@ -272,6 +272,51 @@ section.homefooter article a{
 }
 section.homefooter article a:hover{
     background: rgba(252, 218, 0, 0.4);
+}
+  /*------------*/
+ /*-- Footer --*/
+/*------------*/
+footer{
+    background: #000;
+    color: #fff;
+    padding: 14px 0 10px;
+}
+footer .row{
+    margin: 0 auto;
+}
+footer .col:first-child{
+    margin-top: 5px;
+    padding-left: 0px;
+}
+footer .col:first-child p{
+    margin: 0;
+    font-size: 12px;
+}
+footer .col:first-child a{
+    color: #fff;
+    margin-left: 20px;
+    font-size: 12px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+}
+footer .col:first-child a:hover{
+    color: #fcda00;
+}
+footer .col:last-child{
+    text-align: right;
+    padding-right: 0;
+}
+footer .col:last-child a img{
+    background: #797979;
+    padding: 3px;
+    margin-left: 8px;
+    width: 28px;
+    height: 29px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+}
+footer .col:last-child a:hover img{
+    background: #fcda00;
 }
 
 
@@ -352,6 +397,24 @@ section.homefooter article a:hover{
     section.homefooter article p {
         font-size: 16px;
         line-height: 18px;
+    }
+    /*-- Footer --*/
+    footer .col:first-child a.plclnk{
+        margin-left: 0;
+    }
+    footer .col:first-child p, footer .col:first-child a {
+        float: none !important;
+    }
+    footer .col:last-child {
+        margin-top: 9px;
+    }
+    footer .col:first-child{
+        text-align: center;
+        padding-right: 0;
+    }
+    footer .col:last-child{
+        text-align: center;
+        padding-left: 0;
     }
 }
 @media only screen and (max-width: 770px){
